@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mobile-form">
+      <div class="image-container">
+        <img
+          class="svg-img"
+          src="design/illustration-sign-up-mobile.svg"
+          alt="illustration-sign-up-mobile"
+        />
+      </div>
+
+      <div class="below-svg">
+        <h1 class="stay-updated">Stay updated!</h1>
+        <p class="product-managers-text">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <div class="listed-msg">
+          <div class="listings">
+            <img class="svg-icon" src="design/icon-list.svg" alt="icon-list" />
+            <p class="list-text">Product discovery and building what matters</p>
+          </div>
+          <div class="listings">
+            <img class="svg-icon" src="design/icon-list.svg" alt="icon-list" />
+            <p class="list-text">Measuring to ensure updates are a success</p>
+          </div>
+          <div class="listings">
+            <img class="svg-icon" src="design/icon-list.svg" alt="icon-list" />
+            <p class="list-text">And much more!</p>
+          </div>
+        </div>
+        <div class="email-btn-sect">
+          <div class="email-sect">
+            <div class="email-lbl-line">
+              <label class="email-label">Email address</label>
+              <label class="error-msg hidden-2">valid email required</label>
+            </div>
+
+            <input
+              type="email"
+              class="email"
+              id="inputed"
+              name="email"
+              placeholder="email@company.com"
+              required
+            />
+          </div>
+          <button class="subscribe-btn">Subscibe to monthly newsletter</button>
+        </div>
+      </div>
+    </div>
+    <div class="success-form hidden">
+      <div class="svg-success-container">
+        <img
+          class="svg-icon-success"
+          src="design/icon-list.svg"
+          alt="icon-list"
+        />
+        <h1 class="h-success">Thanks for subscribing!</h1>
+        <p class="p-success">
+          A confirmation has been sent to
+          <label class="lorem-company">@loremcompany.com.</label> Please open it
+          and click the button inside to confirm subscription
+        </p>
+        <button class="dismiss-btn">Dismiss message</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

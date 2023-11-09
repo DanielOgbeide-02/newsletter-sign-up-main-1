@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background: hsl(235, 18%, 26%);
+}
+
+.hidden {
+  display: none !important;
+}
+.stay-updated {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+}
+.svg-img {
+  width: 320px;
+}
+
+.mobile-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: hsl(0, 0%, 100%);
+  position: relative;
+  top: 30px;
+}
+
+.below-svg {
+  width: 320px;
+  padding: 27px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  /* background: white; */
+}
+
+.email-sect {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.email-btn-sect {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.email {
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid rgba(128, 128, 128, 0.342);
+  padding-left: 10px;
+}
+
+.email:hover {
+  cursor: pointer;
+}
+.subscribe-btn {
+  height: 45px;
+}
+
+.listings {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.listed-msg {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subscribe-btn {
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  border: none;
+  background: hsl(234, 29%, 20%);
+  font-weight: 700;
+}
+.dismiss-btn {
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  border: none;
+  background: hsl(234, 29%, 20%);
+  font-weight: 500;
+  height: 45px;
+}
+
+.subscribe-btn:hover {
+  cursor: pointer;
+  background: hsl(4, 100%, 67%);
+  transition: background-color 0.3s;
+  box-shadow: 0 0 0.5em 0 hsl(4, 100%, 67%);
+}
+
+.dismiss-btn:hover {
+  cursor: pointer;
+  background: hsl(4, 100%, 67%);
+  transition: background-color 0.3s;
+  box-shadow: 0 0 0.5em 0 hsl(4, 100%, 67%);
+}
+
+.list-text {
+  padding-top: 8px;
+  padding-left: 5px;
+  font-size: 13px;
+  color: hsl(234, 29%, 20%);
+  font-weight: 500;
+}
+
+.email-label {
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.product-managers-text {
+  font-size: 14px;
+  color: hsl(234, 29%, 20%);
+}
+
+.success-form {
+  /* position: relative; */
+  margin-top: 150px;
+  border-radius: 30px;
+  background: white;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.svg-icon-success {
+  /* position: absolute; */
+  height: 50px;
+  width: 50px;
+}
+
+.svg-success-container {
+  margin: 50px;
+  margin-top: 35px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  height: 300px;
+  font-weight: 400;
+}
+
+.p-success {
+  font-size: 14px;
+}
+
+.lorem-company {
+  font-weight: 700;
+  color: hsl(234, 29%, 20%);
+}
+
+.h-success {
+  color: hsl(234, 29%, 20%);
+}
+
+.error-msg {
+  font-size: 11px;
+  color: hsl(4, 100%, 67%);
+  font-weight: bold;
+}
+
+.email-lbl-line {
+  display: flex;
+  gap: 113px;
+}
+
+.hidden-2 {
+  display: none;
+}
+
+.hidden-3 {
+  color: hsl(4, 100%, 67%);
+  background: hsla(4, 100%, 67%, 0.2);
+}
+
+@media screen and (min-width: 802px) {
+  .mobile-form {
+    display: flex;
+    width: 770px;
+    flex-direction: row;
+    border-radius: 20px;
+    margin: 100px;
+    height: 500px;
+    background: hsl(0, 0%, 100%);
+  }
+
+  body {
+    background: hsl(235, 18%, 26%);
+  }
+
+  .image-container {
+    order: 2;
+    justify-self: center;
+    margin-left: 0;
+  }
+  .below-svg {
+    order: 1;
+    padding: 50px 50px 50px;
+    display: flex;
+    flex-direction: column;
+    width: 415px;
+    justify-content: center;
+  }
+  .svg-img {
+    padding: 20px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 35px;
+    padding-right: 20px;
+    width: 350px;
+    padding-left: 5;
+  }
+
+  .list-text {
+    font-size: 12px;
+  }
+
+  .listings {
+    gap: 10px;
+  }
+
+  .product-managers-text {
+    font-weight: 400;
+  }
+
+  .stay-updated {
+    font-size: 2.8em;
+  }
+
+  .svg-icon {
+    position: relative;
+    top: 4px;
+    width: 15px;
+    height: 15px;
+  }
+
+  .email {
+    padding-left: 20px;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .email-lbl-line {
+    display: flex;
+    gap: 148px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .success-form {
+    height: 300px;
+    width: 300px;
+  }
+  .svg-success-container {
+    height: 275px;
+    gap: 20px;
+  }
+
+  .svg-icon-success {
+    height: 40px;
+    width: 35px;
+  }
+
+  .p-success {
+    font-size: 9px;
+  }
+
+  .dismiss-btn {
+    height: 38px;
+  }
+}
